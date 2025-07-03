@@ -10,7 +10,7 @@ const taskRoutes = require("./routes/tasks");
     const app = express();
     // From my frontend (revisit to reconnect)
     app.use(cors({
-        origin: 'http://localhost:5173/',
+        origin: 'http://localhost:5173', //[removed /]
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTION'],
         credentials: true,
     }))

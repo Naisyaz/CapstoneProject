@@ -20,7 +20,7 @@ export default function Home() {
          },
          body: JSON.stringify({
             email: email,
-            password: password
+            password: password,
          })
       })
       const result = await response.json()
